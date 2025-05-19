@@ -1,4 +1,35 @@
-<!-- VisitedPlaces.com code -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My visited places | VisitedPlaces.com</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes, minimal-ui">
+
+    <meta name="description" content="I visited 69 countries out of 257. That's 26.8% of all countries in the world! #visitedcountries #mytravels #travelmap">
+    <meta name="keywords" content="maps, travel, visited countries, charts, visual">
+
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:site" content="@visitedplaces" />
+    <meta name="twitter:image" content="https://www.visitedplaces.com/lib/index.png" />
+
+    <meta property="og:title" content="Interactive Visited Places Map" />
+    <meta property="og:site_name" content="VisitedPlaces.com" />
+    <meta property="og:url" content="https://www.visitedplaces.com/" />
+    <meta property="og:description" content="I visited 69 countries out of 257. That's 26.8% of all countries in the world! #visitedcountries #mytravels #travelmap" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://www.amcharts.com/inspiration/images/shots/index.jpg" />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- VisitedPlaces.com code -->
 <script>
 // VisitedPlaces.com code
 var visitedplaces_config = {
@@ -15,10 +46,15 @@ var visitedplaces_config = {
   "data": [
     {
       "colors": {},
+      "places": [],
+      "text": "All 7 Continents - 69 Countries (inc. Territories)"
+    },
+    {
+      "colors": {},
       "places": [
         "US"
       ],
-      "text": "All 7 Continents - 69 Countries (inc. Territories)",
+      "text": "My Home",
       "position": {
         "zoomLevel": 1,
         "geoPoint": {
@@ -27,50 +63,6 @@ var visitedplaces_config = {
         },
         "rotationX": 103.5,
         "rotationY": -44.7
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "AL",
-        "AT",
-        "AZ",
-        "BA",
-        "HR",
-        "CZ",
-        "FR",
-        "GE",
-        "DE",
-        "GI",
-        "IS",
-        "IE",
-        "IT",
-        "LI",
-        "MC",
-        "ME",
-        "NL",
-        "MK",
-        "NO",
-        "PT",
-        "RS",
-        "ES",
-        "CH",
-        "TR",
-        "UA",
-        "GB",
-        "VA",
-        "AD",
-        "GR"
-      ],
-      "text": "Europe",
-      "position": {
-        "zoomLevel": 2.4,
-        "geoPoint": {
-          "longitude": 12.1,
-          "latitude": 53.3
-        },
-        "rotationX": -12.1,
-        "rotationY": -53.3
       }
     },
     {
@@ -107,38 +99,6 @@ var visitedplaces_config = {
     {
       "colors": {},
       "places": [
-        "AQ"
-      ],
-      "text": "Antarctica",
-      "position": {
-        "zoomLevel": 1,
-        "geoPoint": {
-          "longitude": 83.2,
-          "latitude": -85.3
-        },
-        "rotationX": -83.2,
-        "rotationY": 85.3
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "NZ"
-      ],
-      "text": "Oceania",
-      "position": {
-        "zoomLevel": 1.9,
-        "geoPoint": {
-          "longitude": 134.3,
-          "latitude": -25.7
-        },
-        "rotationX": -134.3,
-        "rotationY": 25.7
-      }
-    },
-    {
-      "colors": {},
-      "places": [
         "AR",
         "BR",
         "CL",
@@ -155,6 +115,50 @@ var visitedplaces_config = {
         },
         "rotationX": 65.9,
         "rotationY": 20.1
+      }
+    },
+    {
+      "colors": {},
+      "places": [
+        "AL",
+        "AT",
+        "AZ",
+        "BA",
+        "HR",
+        "CZ",
+        "FR",
+        "GE",
+        "DE",
+        "GI",
+        "GR",
+        "IS",
+        "IE",
+        "IT",
+        "LI",
+        "MC",
+        "ME",
+        "NL",
+        "MK",
+        "NO",
+        "PT",
+        "RS",
+        "ES",
+        "CH",
+        "TR",
+        "UA",
+        "GB",
+        "VA",
+        "AD"
+      ],
+      "text": "Europe",
+      "position": {
+        "zoomLevel": 2.4,
+        "geoPoint": {
+          "longitude": 12.1,
+          "latitude": 53.3
+        },
+        "rotationX": -12.1,
+        "rotationY": -53.3
       }
     },
     {
@@ -179,6 +183,7 @@ var visitedplaces_config = {
     {
       "colors": {},
       "places": [
+        "BT",
         "KH",
         "HK",
         "IN",
@@ -190,8 +195,7 @@ var visitedplaces_config = {
         "LK",
         "TH",
         "AE",
-        "VN",
-        "BT"
+        "VN"
       ],
       "text": "Asia",
       "position": {
@@ -203,14 +207,47 @@ var visitedplaces_config = {
         "rotationX": -83.8,
         "rotationY": -33.3
       }
+    },
+    {
+      "colors": {},
+      "places": [
+        "NZ"
+      ],
+      "text": "Oceania",
+      "position": {
+        "zoomLevel": 1.9,
+        "geoPoint": {
+          "longitude": 134.3,
+          "latitude": -25.7
+        },
+        "rotationX": -134.3,
+        "rotationY": 25.7
+      }
+    },
+    {
+      "colors": {},
+      "places": [
+        "AQ"
+      ],
+      "text": "Antarctica",
+      "position": {
+        "zoomLevel": 1,
+        "geoPoint": {
+          "longitude": 83.2,
+          "latitude": -85.3
+        },
+        "rotationX": -83.2,
+        "rotationY": 85.3
+      }
     }
   ],
-  "width": 1280,
-  "height": 720,
   "home": "US"
 };
 </script>
-<div id="chartdiv" style="width: 1280px; height: 720px;">
+<div id="chartdiv" style="width: 1080px; height: 1920px;">
 <script src="https://www.visitedplaces.com/js/common.js"></script>
 <script src="https://www.visitedplaces.com/js/viewer.js"></script>
 <!-- end: VisitedPlaces.com code -->
+
+  </body>
+</html>
