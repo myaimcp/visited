@@ -5,7 +5,7 @@
     <title>My visited places | VisitedPlaces.com</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <meta name="description" content="I visited 69 countries out of 257. That's 26.8% of all countries in the world! #visitedcountries #mytravels #travelmap">
     <meta name="keywords" content="maps, travel, visited countries, charts, visual">
@@ -25,229 +25,298 @@
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         padding: 0;
         margin: 0;
+        overflow-x: hidden;
+      }
+      
+      .container {
+        width: 100%;
+        height: 100vh;
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+      
+      #chartdiv {
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+      }
+      
+      /* Responsive adjustments */
+      @media only screen and (max-width: 768px) {
+        /* For tablets and mobile */
+        .container {
+          height: 80vh;
+        }
+      }
+      
+      @media only screen and (max-width: 480px) {
+        /* For small mobile devices */
+        .container {
+          height: 70vh;
+        }
+      }
+      
+      /* Optional: Add a title bar for mobile */
+      .mobile-title {
+        display: none;
+        padding: 10px;
+        text-align: center;
+        background: #2a2a2a;
+        color: white;
+        font-weight: bold;
+      }
+      
+      @media only screen and (max-width: 480px) {
+        .mobile-title {
+          display: block;
+        }
       }
     </style>
   </head>
   <body>
-    <!-- VisitedPlaces.com code -->
-<script>
-// VisitedPlaces.com code
-var visitedplaces_config = {
-  "map": "world",
-  "projection": "geoOrthographic",
-  "theme": "dark-green",
-  "water": 1,
-  "graticule": 1,
-  "names": 1,
-  "duration": 2000,
-  "slider": 0,
-  "autoplay": 1,
-  "autozoom": "none",
-  "data": [
-    {
-      "colors": {},
-      "places": [],
-      "text": "All 7 Continents - 69 Countries (inc. Territories)"
-    },
-    {
-      "colors": {},
-      "places": [
-        "US"
-      ],
-      "text": "My Home",
-      "position": {
-        "zoomLevel": 1,
-        "geoPoint": {
-          "longitude": 0,
-          "latitude": 0
-        },
-        "rotationX": 103.5,
-        "rotationY": -44.7
+    <div class="mobile-title">My Visited Places Map</div>
+    <div class="container">
+      <div id="chartdiv">
+        <!-- VisitedPlaces.com code -->
+        <script>
+        // VisitedPlaces.com code
+        var visitedplaces_config = {
+          "map": "world",
+          "projection": "geoOrthographic",
+          "theme": "dark-green",
+          "water": 1,
+          "graticule": 1,
+          "names": 1,
+          "duration": 2000,
+          "slider": 0,
+          "autoplay": 1,
+          "autozoom": "none",
+          "data": [
+            {
+              "colors": {},
+              "places": [],
+              "text": "All 7 Continents - 69 Countries (inc. Territories)"
+            },
+            {
+              "colors": {},
+              "places": [
+                "US"
+              ],
+              "text": "My Home",
+              "position": {
+                "zoomLevel": 1,
+                "geoPoint": {
+                  "longitude": 0,
+                  "latitude": 0
+                },
+                "rotationX": 103.5,
+                "rotationY": -44.7
+              }
+            },
+            {
+              "colors": {
+                "US": "daaa44"
+              },
+              "places": [
+                "BZ",
+                "CA",
+                "CR",
+                "CU",
+                "CW",
+                "SV",
+                "GT",
+                "MX",
+                "NI",
+                "PA",
+                "PR",
+                "VI",
+                "US",
+                "BS"
+              ],
+              "text": "North America",
+              "position": {
+                "zoomLevel": 1.6,
+                "geoPoint": {
+                  "longitude": -100.6,
+                  "latitude": 44.4
+                },
+                "rotationX": 100.6,
+                "rotationY": -44.4
+              }
+            },
+            {
+              "colors": {},
+              "places": [
+                "AR",
+                "BR",
+                "CL",
+                "EC",
+                "PE",
+                "UY"
+              ],
+              "text": "South America",
+              "position": {
+                "zoomLevel": 1.5,
+                "geoPoint": {
+                  "longitude": -65.9,
+                  "latitude": -20.1
+                },
+                "rotationX": 65.9,
+                "rotationY": 20.1
+              }
+            },
+            {
+              "colors": {},
+              "places": [
+                "AL",
+                "AT",
+                "AZ",
+                "BA",
+                "HR",
+                "CZ",
+                "FR",
+                "GE",
+                "DE",
+                "GI",
+                "GR",
+                "IS",
+                "IE",
+                "IT",
+                "LI",
+                "MC",
+                "ME",
+                "NL",
+                "MK",
+                "NO",
+                "PT",
+                "RS",
+                "ES",
+                "CH",
+                "TR",
+                "UA",
+                "GB",
+                "VA",
+                "AD"
+              ],
+              "text": "Europe",
+              "position": {
+                "zoomLevel": 2.4,
+                "geoPoint": {
+                  "longitude": 12.1,
+                  "latitude": 53.3
+                },
+                "rotationX": -12.1,
+                "rotationY": -53.3
+              }
+            },
+            {
+              "colors": {},
+              "places": [
+                "KE",
+                "MA",
+                "RW",
+                "UG"
+              ],
+              "text": "Africa",
+              "position": {
+                "zoomLevel": 1.5,
+                "geoPoint": {
+                  "longitude": 18,
+                  "latitude": 1.6
+                },
+                "rotationX": -18,
+                "rotationY": -1.6
+              }
+            },
+            {
+              "colors": {},
+              "places": [
+                "BT",
+                "KH",
+                "HK",
+                "IN",
+                "JP",
+                "MO",
+                "MY",
+                "QA",
+                "SG",
+                "LK",
+                "TH",
+                "AE",
+                "VN"
+              ],
+              "text": "Asia",
+              "position": {
+                "zoomLevel": 1.5,
+                "geoPoint": {
+                  "longitude": 83.8,
+                  "latitude": 33.3
+                },
+                "rotationX": -83.8,
+                "rotationY": -33.3
+              }
+            },
+            {
+              "colors": {},
+              "places": [
+                "NZ"
+              ],
+              "text": "Oceania",
+              "position": {
+                "zoomLevel": 1.9,
+                "geoPoint": {
+                  "longitude": 134.3,
+                  "latitude": -25.7
+                },
+                "rotationX": -134.3,
+                "rotationY": 25.7
+              }
+            },
+            {
+              "colors": {},
+              "places": [
+                "AQ"
+              ],
+              "text": "Antarctica",
+              "position": {
+                "zoomLevel": 1,
+                "geoPoint": {
+                  "longitude": 83.2,
+                  "latitude": -85.3
+                },
+                "rotationX": -83.2,
+                "rotationY": 85.3
+              }
+            }
+          ],
+          "home": "US"
+        };
+        </script>
+        <script src="https://www.visitedplaces.com/js/common.js"></script>
+        <script src="https://www.visitedplaces.com/js/viewer.js"></script>
+      </div>
+    </div>
+    
+    <!-- Optional: Add responsive script to handle mobile interactions better -->
+    <script>
+      // Function to adjust chart size based on device orientation
+      function adjustChartSize() {
+        var chartDiv = document.getElementById('chartdiv');
+        var container = document.querySelector('.container');
+        
+        // On mobile devices in landscape, adjust the height
+        if (window.matchMedia("(max-width: 768px) and (orientation: landscape)").matches) {
+          container.style.height = '90vh';
+        }
       }
-    },
-    {
-      "colors": {
-        "US": "daaa44"
-      },
-      "places": [
-        "BZ",
-        "CA",
-        "CR",
-        "CU",
-        "CW",
-        "SV",
-        "GT",
-        "MX",
-        "NI",
-        "PA",
-        "PR",
-        "VI",
-        "US",
-        "BS"
-      ],
-      "text": "North America",
-      "position": {
-        "zoomLevel": 1.6,
-        "geoPoint": {
-          "longitude": -100.6,
-          "latitude": 44.4
-        },
-        "rotationX": 100.6,
-        "rotationY": -44.4
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "AR",
-        "BR",
-        "CL",
-        "EC",
-        "PE",
-        "UY"
-      ],
-      "text": "South America",
-      "position": {
-        "zoomLevel": 1.5,
-        "geoPoint": {
-          "longitude": -65.9,
-          "latitude": -20.1
-        },
-        "rotationX": 65.9,
-        "rotationY": 20.1
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "AL",
-        "AT",
-        "AZ",
-        "BA",
-        "HR",
-        "CZ",
-        "FR",
-        "GE",
-        "DE",
-        "GI",
-        "GR",
-        "IS",
-        "IE",
-        "IT",
-        "LI",
-        "MC",
-        "ME",
-        "NL",
-        "MK",
-        "NO",
-        "PT",
-        "RS",
-        "ES",
-        "CH",
-        "TR",
-        "UA",
-        "GB",
-        "VA",
-        "AD"
-      ],
-      "text": "Europe",
-      "position": {
-        "zoomLevel": 2.4,
-        "geoPoint": {
-          "longitude": 12.1,
-          "latitude": 53.3
-        },
-        "rotationX": -12.1,
-        "rotationY": -53.3
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "KE",
-        "MA",
-        "RW",
-        "UG"
-      ],
-      "text": "Africa",
-      "position": {
-        "zoomLevel": 1.5,
-        "geoPoint": {
-          "longitude": 18,
-          "latitude": 1.6
-        },
-        "rotationX": -18,
-        "rotationY": -1.6
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "BT",
-        "KH",
-        "HK",
-        "IN",
-        "JP",
-        "MO",
-        "MY",
-        "QA",
-        "SG",
-        "LK",
-        "TH",
-        "AE",
-        "VN"
-      ],
-      "text": "Asia",
-      "position": {
-        "zoomLevel": 1.5,
-        "geoPoint": {
-          "longitude": 83.8,
-          "latitude": 33.3
-        },
-        "rotationX": -83.8,
-        "rotationY": -33.3
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "NZ"
-      ],
-      "text": "Oceania",
-      "position": {
-        "zoomLevel": 1.9,
-        "geoPoint": {
-          "longitude": 134.3,
-          "latitude": -25.7
-        },
-        "rotationX": -134.3,
-        "rotationY": 25.7
-      }
-    },
-    {
-      "colors": {},
-      "places": [
-        "AQ"
-      ],
-      "text": "Antarctica",
-      "position": {
-        "zoomLevel": 1,
-        "geoPoint": {
-          "longitude": 83.2,
-          "latitude": -85.3
-        },
-        "rotationX": -83.2,
-        "rotationY": 85.3
-      }
-    }
-  ],
-  "home": "US"
-};
-</script>
-<div id="chartdiv" style="width: 1080px; height: 720px;">
-<script src="https://www.visitedplaces.com/js/common.js"></script>
-<script src="https://www.visitedplaces.com/js/viewer.js"></script>
-<!-- end: VisitedPlaces.com code -->
-
+      
+      // Run on page load
+      window.addEventListener('load', adjustChartSize);
+      
+      // Run when orientation changes
+      window.addEventListener('orientationchange', adjustChartSize);
+      window.addEventListener('resize', adjustChartSize);
+    </script>
   </body>
 </html>
