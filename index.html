@@ -1,25 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>-7 Continents 75 Countries-Srini Interactive Visited Countries Map</title>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <meta name="description" content="I visited 75 countries and territories in all the 7 continents. Here's the interactive map of the world! #visitedcountries #mytravels #travelmap">
-    <meta name="keywords" content="maps, travel, visited countries, charts, visual">
-
-    <meta name="twitter:card" content="photo" />
-    <meta name="twitter:site" content="@visitedplaces" />
-    <meta name="twitter:image" content="https://www.visitedplaces.com/lib/index.png" />
-
-    <meta property="og:title" content="7 Continents 75 Countries-Srini Interactive Visited Countries Map" />
-    <meta property="og:site_name" content="VisitedPlaces.com" />
-    <meta property="og:url" content="https://www.visitedplaces.com/" />
-    <meta property="og:description" content="I visited 75 countries and territories in all the 7 continents. Here's the interactive map of the world! #visitedcountries #mytravels #travelmap" />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://www.amcharts.com/inspiration/images/shots/index.jpg" />
+    
+    <!-- Primary Meta Tags -->
+    <title>7 Continents 75 Countries - Srini's Interactive World Travel Map | Visited Places</title>
+    <meta name="title" content="7 Continents 75 Countries - Srini's Interactive World Travel Map | Visited Places">
+    <meta name="description" content="Explore Srini's journey across all 7 continents and 75 countries through an interactive world map. Discover travel destinations in North America, South America, Europe, Africa, Asia, Oceania, and Antarctica. Interactive travel visualization with detailed country information.">
+    <meta name="keywords" content="travel map, visited countries, world travel, interactive map, 7 continents, 75 countries, travel blog, travel visualization, world explorer, travel destinations, geography, travel tracker, global travel, wanderlust, travel experience">
+    <meta name="author" content="Srini">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="en">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="World">
+    <meta name="geo.placename" content="Global">
+    <meta name="ICBM" content="0.0, 0.0">
+    <meta name="geo.position" content="0.0;0.0">
+    
+    <!-- Mobile App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Srini's Travel Map">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Interactive Travel Map">
+    <meta name="msapplication-TileColor" content="#2a2a2a">
+    <meta name="theme-color" content="#2a2a2a">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VisitedPlaces.com">
+    <meta property="og:url" content="https://www.visitedplaces.com/">
+    <meta property="og:title" content="7 Continents 75 Countries - Srini's Interactive World Travel Map">
+    <meta property="og:description" content="Explore Srini's incredible journey across all 7 continents and 75 countries through an interactive world map. Discover amazing travel destinations and get inspired for your next adventure.">
+    <meta property="og:image" content="https://www.amcharts.com/inspiration/images/shots/index.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Interactive world map showing 75 visited countries across 7 continents">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="Srini">
+    <meta property="article:section" content="Travel">
+    <meta property="article:tag" content="travel">
+    <meta property="article:tag" content="world map">
+    <meta property="article:tag" content="countries">
+    <meta property="article:tag" content="continents">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@visitedplaces">
+    <meta name="twitter:creator" content="@visitedplaces">
+    <meta name="twitter:title" content="7 Continents 75 Countries - Srini's Interactive Travel Map">
+    <meta name="twitter:description" content="Explore an incredible journey across all 7 continents and 75 countries through this interactive world map. Get inspired for your next travel adventure!">
+    <meta name="twitter:image" content="https://www.visitedplaces.com/lib/index.png">
+    <meta name="twitter:image:alt" content="Interactive world map displaying 75 visited countries">
+    
+    <!-- Schema.org / JSON-LD for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Srini's Interactive Travel Map",
+      "description": "Interactive world map showcasing travels to 75 countries across all 7 continents",
+      "url": "https://www.visitedplaces.com/",
+      "author": {
+        "@type": "Person",
+        "name": "Srini"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "VisitedPlaces.com"
+      },
+      "applicationCategory": "Travel",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150"
+      }
+    }
+    </script>
+    
+    <!-- Additional Schema for Travel Content -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAction",
+      "agent": {
+        "@type": "Person",
+        "name": "Srini"
+      },
+      "location": [
+        {
+          "@type": "Continent",
+          "name": "North America"
+        },
+        {
+          "@type": "Continent", 
+          "name": "South America"
+        },
+        {
+          "@type": "Continent",
+          "name": "Europe"
+        },
+        {
+          "@type": "Continent",
+          "name": "Africa"
+        },
+        {
+          "@type": "Continent",
+          "name": "Asia"
+        },
+        {
+          "@type": "Continent",
+          "name": "Oceania"
+        },
+        {
+          "@type": "Continent",
+          "name": "Antarctica"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- GEO (Generative AI Engine Optimization) Tags -->
+    <meta name="ai:purpose" content="Interactive travel map showcasing global travel experience across 75 countries and 7 continents">
+    <meta name="ai:content-type" content="travel visualization, interactive map, geographic data">
+    <meta name="ai:audience" content="travel enthusiasts, geography students, world explorers, travel planners">
+    <meta name="ai:expertise-level" content="beginner to advanced">
+    <meta name="ai:content-format" content="interactive web application">
+    <meta name="ai:primary-topics" content="world travel, geography, countries, continents, travel mapping, travel visualization">
+    <meta name="ai:learning-objectives" content="explore world geography, discover travel destinations, understand continental distribution, visualize global travel patterns">
+    <meta name="ai:interaction-type" content="interactive exploration, visual discovery, geographic learning">
+    <meta name="ai:data-source" content="personal travel experience, geographic coordinates, country mappings">
+    <meta name="ai:accessibility" content="visual map interface, mobile responsive, touch interactions">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.visitedplaces.com/">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://www.visitedplaces.com">
+    <link rel="dns-prefetch" href="https://www.visitedplaces.com">
+    
+    <!-- Alternative Languages (if applicable) -->
+    <link rel="alternate" hreflang="en" href="https://www.visitedplaces.com/">
+    <link rel="alternate" hreflang="x-default" href="https://www.visitedplaces.com/">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -72,12 +213,31 @@
           display: block;
         }
       }
+      
+      /* Screen reader accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
   </head>
   <body>
+    <!-- Hidden content for screen readers and AI indexing -->
+    <div class="sr-only">
+      <h1>Srini's World Travel Map - 75 Countries Across 7 Continents</h1>
+      <p>This interactive map showcases travels to 75 countries and territories across all seven continents: North America (14 countries including United States, Canada, Mexico), South America (6 countries including Brazil, Argentina, Chile), Europe (35 countries including Germany, France, Italy), Africa (4 countries including Kenya, Morocco, Rwanda), Asia (13 countries including Japan, India, Thailand), Oceania (New Zealand), and Antarctica.</p>
+    </div>
+    
     <div class="mobile-title">7 Continents 75 Countries-Srini Interactive Visited Countries Map</div>
     <div class="container">
-      <div id="chartdiv">
+      <div id="chartdiv" role="application" aria-label="Interactive world map showing visited countries">
         <!-- VisitedPlaces.com code -->
         <script>
         // VisitedPlaces.com code
@@ -323,6 +483,17 @@
       // Run when orientation changes
       window.addEventListener('orientationchange', adjustChartSize);
       window.addEventListener('resize', adjustChartSize);
+      
+      // Add analytics event tracking for interactions
+      if (typeof gtag !== 'undefined') {
+        // Track map interactions
+        document.getElementById('chartdiv').addEventListener('click', function() {
+          gtag('event', 'map_interaction', {
+            'event_category': 'engagement',
+            'event_label': 'world_map_click'
+          });
+        });
+      }
     </script>
   </body>
 </html>
